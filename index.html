@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Signature</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+       
+      }
+      *{
+          margin: 0;
+        padding: 0;
+      }
+
+      .signature-container {
+        max-width: 400px;
+        max-height: 150px;
+       display: flex;
+    
+      }
+      .first {
+        width: 250px;
+        max-height: 150px;
+        background-color: #341d2b;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(2 ,1fr);
+      }
+
+      .second {
+        width: 150px;
+        max-height: 150px;
+        background-color: rgba(52, 29, 43, .4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+      }
+      .title {
+        font-size: 7px;
+        color: #555;
+      }
+
+      .name_title{
+         grid-row: 1;
+       grid-column: 1;
+      }
+      .contact-info {
+        font-size: 7px;
+       
+       
+       grid-row: 2;
+       grid-column: 2;
+      }
+      .contact-info a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signature-container">
+      <div class="first">
+        <div class="name_title">
+             <p class="name">Cyprian</p>
+        <p class="title">Founder &amp; C.E.O<br />(Ed Cyprian)</p>
+        </div>
+       
+        <div class="contact-info">
+          <p>
+            Email:
+            <a href="mailto:ecyprian@ayyriangroup.com"
+              >ecyprian@ayyriangroup.com</a
+            >
+          </p>
+          <p>Tel: <a href="tel:+233533972886">+ (233) 533972886</a></p>
+          <p>Tel: <a href="tel:+12148811184">+1 (214) 881-1184</a></p>
+          <p>Tel: <a href="tel:+18328104980">+1 (832) 810-4980</a></p>
+        </div>
+      </div>
+      <div class="second">
+        <img src="/Group.svg" alt="sample" />
+      </div>
+    </div>
+  </body>
+</html>
